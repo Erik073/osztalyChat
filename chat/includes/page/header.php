@@ -1,9 +1,10 @@
 <?php
-require_once(dirname(__FILE__) . "/../database/DatabaseConnection.php");
+require_once(dirname(__FILE__) . "/../autoload.php");
 ?>
+
+
 <!DOCTYPE html> 
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
