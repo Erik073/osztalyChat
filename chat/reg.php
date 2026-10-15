@@ -1,8 +1,10 @@
 <?php
 require_once 'includes/page/header.php';
 
+$connection = DatabaseConnection::getDatabaseConnection();
+
 if (isset($_POST["username"], $_POST["full_name"], $_POST["password"])) {
-    $reg_statement = $connection->getPdo()->prepare("INSERT 
+    $reg_statement = $connection->prepare("INSERT 
     INTO user (username, full_name, password, user_token) 
     VALUES (?,?,?,?)");
     $reg_statement->execute([

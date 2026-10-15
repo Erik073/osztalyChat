@@ -1,6 +1,5 @@
 <?php
-require_once("includes/database/DatabaseConnection.php");
-$connection = DatabaseConnection::getDatabaseConnection();
+require_once(dirname(__FILE__) . "/../database/DatabaseConnection.php");
 ?>
 <!DOCTYPE html> 
 <html lang="hu">
